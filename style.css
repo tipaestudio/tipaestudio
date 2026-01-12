@@ -2,12 +2,12 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family:'Inter', sans-serif;
+  font-family:'Instrument serif', sans-serif;
 }
 
 body{
   background:#fff;
-  color:#111;
+  color:#c3dfa4;
   overflow-x:hidden;
 }
 
@@ -103,3 +103,4 @@ nav a{
   opacity:1;
   transform:translateY(0);
 }
+
