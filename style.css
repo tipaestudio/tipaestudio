@@ -6,61 +6,47 @@
 }
 
 body{
-  background:#fafafa;
+  background:#fff;
   color:#111;
-  line-height:1.6;
+  overflow-x:hidden;
 }
 
 header{
+  position:fixed;
+  top:0;
+  width:100%;
+  padding:25px 60px;
   display:flex;
   justify-content:space-between;
-  align-items:center;
-  padding:30px 80px;
-  position:fixed;
-  width:100%;
-  top:0;
   background:white;
   z-index:10;
-}
-
-.logo{
-  font-weight:800;
-  font-size:20px;
 }
 
 nav a{
   margin-left:30px;
   text-decoration:none;
   color:#111;
-  font-weight:400;
+  font-weight:500;
 }
 
 .hero{
-  height:100vh;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  padding:0 80px;
+  min-height:100vh;
+  padding:160px 60px;
 }
 
 .hero h1{
-  font-size:64px;
-  font-weight:800;
+  font-size:72px;
+  line-height:1;
 }
 
 .hero p{
-  margin-top:20px;
-  font-size:20px;
+  margin-top:30px;
   max-width:500px;
+  font-size:20px;
 }
 
 .section{
-  padding:140px 80px;
-}
-
-.section h2{
-  font-size:40px;
-  margin-bottom:40px;
+  padding:160px 60px;
 }
 
 .dark{
@@ -68,62 +54,52 @@ nav a{
   color:white;
 }
 
-.grid{
+.services{
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:30px;
+  gap:40px;
+  margin-top:60px;
 }
 
-.grid div{
+.services div{
   padding:40px;
-  background:white;
-  color:#111;
-  font-weight:600;
+  border:2px solid #111;
 }
 
-.dark .grid div{
-  background:#222;
-  color:white;
+.dark .services div{
+  border-color:white;
+}
+
+.portfolio{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:40px;
+  margin-top:60px;
 }
 
 .card{
-  height:200px;
+  height:300px;
+  background:#eee;
   display:flex;
   align-items:center;
   justify-content:center;
-}
-
-form{
-  display:flex;
-  flex-direction:column;
-  max-width:400px;
-}
-
-input, textarea{
-  margin-bottom:20px;
-  padding:12px;
-  border:none;
-}
-
-button{
-  padding:15px;
-  background:white;
-  color:#111;
-  border:none;
-  font-weight:600;
-  cursor:pointer;
-}
-
-footer{
-  text-align:center;
-  padding:40px;
-  font-size:14px;
+  overflow:hidden;
 }
 
 .card img{
   width:100%;
   height:100%;
   object-fit:cover;
-  border-radius:8px;
 }
 
+/* ANIMACIONES */
+.reveal{
+  opacity:0;
+  transform:translateY(60px);
+  transition:1s ease;
+}
+
+.reveal.active{
+  opacity:1;
+  transform:translateY(0);
+}
