@@ -2,7 +2,7 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
-  font-family:'Instrument serif', sans-serif;
+ font-family: 'Raleway', sans-serif;
 }
 
 body{
@@ -35,8 +35,9 @@ nav a{
 }
 
 .hero h1{
-  font-size:72px;
-  line-height:1;
+  font-family: 'Instrument Serif', serif;
+  font-size: 76px;
+  line-height: 1;
 }
 
 .hero p{
@@ -103,4 +104,5 @@ nav a{
   opacity:1;
   transform:translateY(0);
 }
+
 
