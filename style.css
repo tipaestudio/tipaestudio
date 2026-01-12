@@ -105,5 +105,42 @@ nav a{
   transform:translateY(0);
 }
 
+.services {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.service-btn {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: 1px solid #000;
+  background: transparent;
+  transition: 0.3s;
+}
+
+.service-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+.service-detail {
+  display: none;
+  margin-top: 1rem;
+}
+
+.service-detail img {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.service-detail p {
+  font-size: 1rem;
+}
+
+
+
 
 
